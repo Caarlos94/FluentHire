@@ -1,0 +1,11 @@
+[
+  {"id": "1", "role": "ai", "text": "Hi Maria! Thanks for joining this practice session. I'm going to ask you a behavioral interview question. Ready?", "timestamp": 1000},
+  {"id": "2", "role": "user", "text": "Yes, I am ready for the question.", "timestamp": 4000},
+  {"id": "3", "role": "ai", "text": "Great! Tell me about yourself. Give me a brief overview of your background, experience, and what you're looking for in your next role.", "timestamp": 6000},
+  {"id": "4", "role": "user", "text": "Okay so, I am Maria and I am from Mexico. I study computer science in university and I graduate last year. In my last job I work as junior developer in small company. We make web applications for local business. I use React and also Node for the backend.", "timestamp": 15000},
+  {"id": "5", "role": "ai", "text": "That's a good start! Can you tell me more about what you're looking for in your next role?", "timestamp": 18000},
+  {"id": "6", "role": "user", "text": "Yes, so I want to grow more as developer. In my current job, actually there is not many opportunity to learn new things because the team is very small. I want to work in bigger company where I can learn from senior developers. I am very interested on backend development and also I want to improve my English because I know is very important for work in US companies.", "timestamp": 32000},
+  {"id": "7", "role": "ai", "text": "Thank you for sharing that. What specific technologies or projects excite you?", "timestamp": 35000},
+  {"id": "8", "role": "user", "text": "I like very much the microservices architecture. In my job we have monolith application and is difficult to maintain. I would like to work with microservices, maybe use Docker and Kubernetes. Also I am interesting in learn about system design because I think is important for grow as engineer. I depend of my team lead for architecture decisions now but I want to be able to make this decisions by myself.", "timestamp": 52000},
+  {"id": "9", "role": "ai", "text": "That shows great self-awareness about your growth areas. Thank you Maria, that was a solid response!", "timestamp": 55000}
+]

@@ -1,0 +1,10 @@
+[
+  {"id": "1", "role": "ai", "text": "Hi Maria! Today we'll tackle a system design question. Design a URL shortener service like Bitly. Where would you start?", "timestamp": 1000},
+  {"id": "2", "role": "user", "text": "Okay, so URL shortener is a service that take long URL and make it short, right? And when someone click the short URL it redirect to the original one.", "timestamp": 8000},
+  {"id": "3", "role": "ai", "text": "That's right. How would you design the overall system?", "timestamp": 11000},
+  {"id": "4", "role": "user", "text": "So first I think we need a database to store the mapping between short URL and long URL. I would use like a table with columns for the short code and the original URL. When someone create a short URL, we generate a unique code and save it. When someone access the short URL, we look up the code and redirect.", "timestamp": 25000},
+  {"id": "5", "role": "ai", "text": "Good start. How would you generate the unique short codes?", "timestamp": 28000},
+  {"id": "6", "role": "user", "text": "Hmm, I think I can use random string generator. Like generate 6 or 7 characters from letters and numbers. But the problem is maybe I generate same code two times. So I need to check in database if code already exist. If yes, I generate new one. Actually, I think maybe also I can use hash function on the URL but I am not sure which one.", "timestamp": 43000},
+  {"id": "7", "role": "ai", "text": "What about handling millions of URLs? How would you scale?", "timestamp": 46000},
+  {"id": "8", "role": "user", "text": "For scale... I think we can use caching to avoid hit database every time for redirect. Like Redis or something similar. For the web servers, we can have multiple servers behind load balancer. The database maybe need to be distributed but I am not very sure how to do this. I think is important to have good index on the short code column for fast lookups.", "timestamp": 62000}
+]

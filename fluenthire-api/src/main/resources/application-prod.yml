@@ -1,0 +1,16 @@
+# Production profile — activated via SPRING_PROFILES_ACTIVE=prod
+# Overrides application.yml defaults for production deployment
+
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+sentry:
+  traces-sample-rate: 0.1

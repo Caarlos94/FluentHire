@@ -1,0 +1,9 @@
+[
+  {"id": "1", "role": "ai", "text": "Welcome James! I'd like you to tell me about yourself. Give me a brief overview of your background, experience, and what you're looking for in your next role.", "timestamp": 1000},
+  {"id": "2", "role": "user", "text": "Sure, thanks for having me. I'm a software engineer with about four years of experience, primarily working in full-stack development. I started my career at a mid-sized SaaS company where I was part of a team building internal tools for sales operations.", "timestamp": 10000},
+  {"id": "3", "role": "ai", "text": "That's great context. Tell me more about your technical experience and what excites you.", "timestamp": 13000},
+  {"id": "4", "role": "user", "text": "On the technical side, I've worked extensively with React and TypeScript on the frontend, and Java with Spring Boot on the backend. More recently, I led the migration of our monolithic API to a set of microservices, which was honestly the most challenging project I've taken on. We had to do it incrementally while keeping the existing system running, and I learned a lot about managing technical debt in production.", "timestamp": 30000},
+  {"id": "5", "role": "ai", "text": "Impressive. What are you looking for next?", "timestamp": 33000},
+  {"id": "6", "role": "user", "text": "I'm looking for an opportunity where I can have more ownership over architectural decisions. At my current company, I've grown into a tech lead role informally, but I'd like to formalize that and work on systems at a larger scale. I'm particularly interested in distributed systems and data-intensive applications. I also value a strong engineering culture where code quality and testing are priorities, not afterthoughts.", "timestamp": 50000},
+  {"id": "7", "role": "ai", "text": "That's a very well-structured answer. Thank you, James.", "timestamp": 53000}
+]

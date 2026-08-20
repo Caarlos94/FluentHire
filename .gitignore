@@ -1,0 +1,21 @@
+.DS_Store
+
+# Claude Code tools/files
+CLAUDE.md
+.mcp.json
+.playwright-mcp/
+cro-audit/
+AUDIT.md
+
+# Audit snapshots
+audit-*-snapshot.md
+target-*-snapshot.md
+
+# AI analysis snapshots
+analysis/
+
+# Documentation
+docs/
+
+# Test artifacts
+fluenthire-web/test-results/

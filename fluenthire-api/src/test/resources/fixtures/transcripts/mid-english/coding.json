@@ -1,0 +1,11 @@
+[
+  {"id": "1", "role": "ai", "text": "Hi James! Today's coding problem: Given an array of integers and a target sum, find two distinct numbers that add up to the target. Walk me through your approach.", "timestamp": 1000},
+  {"id": "2", "role": "user", "text": "Alright, so the classic two-sum problem. My first thought is to use a hash map for an O of n solution. Let me think through the approach step by step.", "timestamp": 7000},
+  {"id": "3", "role": "ai", "text": "Sounds good, go ahead.", "timestamp": 9000},
+  {"id": "4", "role": "user", "text": "I'll iterate through the array once. For each element, I calculate the complement, which is the target minus the current element. I check if that complement exists as a key in my hash map. If it does, I've found my pair and I return their indices. If not, I store the current element as a key with its index as the value, then move on.", "timestamp": 22000},
+  {"id": "5", "role": "ai", "text": "What about the time and space complexity?", "timestamp": 25000},
+  {"id": "6", "role": "user", "text": "Time complexity is O of n since we traverse the array once. Each hash map lookup and insertion is O of 1 amortized. Space complexity is O of n in the worst case because we might need to store every element before finding a match. Compared to the brute force O of n squared approach, this is a significant improvement, especially for large inputs.", "timestamp": 40000},
+  {"id": "7", "role": "ai", "text": "How would you handle edge cases?", "timestamp": 43000},
+  {"id": "8", "role": "user", "text": "Good question. First, if the array has fewer than two elements, there's no valid pair, so I'd return an empty result or throw an exception depending on the API contract. For duplicates, the algorithm naturally handles them because we check for the complement before inserting the current element. So if the target is 6 and we have two 3s, the first 3 gets added to the map, and when we encounter the second 3, the complement lookup finds it. I'd also consider negative numbers, but the algorithm handles those transparently since subtraction works the same way.", "timestamp": 65000},
+  {"id": "9", "role": "ai", "text": "Excellent breakdown. Clean and thorough.", "timestamp": 68000}
+]

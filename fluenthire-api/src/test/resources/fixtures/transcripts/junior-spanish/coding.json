@@ -1,0 +1,10 @@
+[
+  {"id": "1", "role": "ai", "text": "Hi Maria! Today we'll work on a coding problem. Given an array of integers and a target sum, find two distinct numbers that add up to the target. How would you approach this?", "timestamp": 1000},
+  {"id": "2", "role": "user", "text": "Okay, let me think... So the problem is about find two numbers that sum to target, right? I think in use a brute force first. Like, I check every pair of numbers.", "timestamp": 8000},
+  {"id": "3", "role": "ai", "text": "Sure, walk me through the brute force approach and its complexity.", "timestamp": 11000},
+  {"id": "4", "role": "user", "text": "So with brute force I use two loops. The first loop go through each number, and the second loop check all the other numbers to see if they sum to target. This is O of n squared because I have two nested loops. Is not very efficient.", "timestamp": 22000},
+  {"id": "5", "role": "ai", "text": "Good analysis. Can you think of a more optimal solution?", "timestamp": 25000},
+  {"id": "6", "role": "user", "text": "Yes, actually I can use a hash map. So I iterate through the array one time. For each number I calculate the complement, which is target minus current number. Then I check if complement exist in the hash map. If yes, I found the pair. If no, I add current number to the hash map. This way is O of n for time and O of n for space.", "timestamp": 42000},
+  {"id": "7", "role": "ai", "text": "Excellent! What about edge cases?", "timestamp": 45000},
+  {"id": "8", "role": "user", "text": "Hmm, edge cases... I think if the array is empty or have only one element, then is impossible to find pair so I return empty. Also if there is duplicate numbers I need to be careful. For example if target is 6 and array have two 3s, the hash map need to handle this correctly. I think my solution work because I check the complement before add the number.", "timestamp": 60000}
+]
